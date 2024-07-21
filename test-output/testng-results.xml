@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-21T18:54:47 IST" name="Suite" finished-at="2024-07-21T18:55:11 IST" duration-ms="23409">
+  <suite started-at="2024-07-21T21:20:43 IST" name="Suite" finished-at="2024-07-21T21:21:14 IST" duration-ms="31146">
     <groups>
     </groups>
-    <test started-at="2024-07-21T18:54:47 IST" name="Test" finished-at="2024-07-21T18:55:11 IST" duration-ms="23409">
+    <test started-at="2024-07-21T21:20:43 IST" name="Test" finished-at="2024-07-21T21:21:14 IST" duration-ms="31146">
       <class name="gokul.testClass.Naukri">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:gokul.testClass.Naukri@3a5ecce3]" started-at="2024-07-21T18:54:47 IST" name="initilize" finished-at="2024-07-21T18:54:50 IST" duration-ms="2813" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:gokul.testClass.Naukri@3a5ecce3]" started-at="2024-07-21T21:20:43 IST" name="initilize" finished-at="2024-07-21T21:20:49 IST" duration-ms="6080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="findJobs()[pri:0, instance:gokul.testClass.Naukri@3a5ecce3]" started-at="2024-07-21T18:54:50 IST" name="findJobs" finished-at="2024-07-21T18:55:11 IST" duration-ms="20555" status="PASS">
+        <test-method signature="findJobs()[pri:0, instance:gokul.testClass.Naukri@3a5ecce3]" started-at="2024-07-21T21:20:49 IST" name="findJobs" finished-at="2024-07-21T21:21:14 IST" duration-ms="25011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findJobs -->
