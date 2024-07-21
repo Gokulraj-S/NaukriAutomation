@@ -24,31 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class BaseTest {
 	public WebDriver driver;
 	
-	public void handleLocationPopup() {
-        try {
-            // Using AppleScript to handle the popup
-            String[] script = {
-                "osascript",
-                "-e", "tell application \"Safari\"",
-                "-e", "activate",
-                "-e", "tell application \"System Events\"",
-                "-e", "click button \"Allow\" of window \"Google\" of application process \"Safari\"",
-                "-e", "end tell",
-                "-e", "end tell"
-            };
 
-            Process process = Runtime.getRuntime().exec(script);
-            process.waitFor();
-
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 	
 	@BeforeTest(alwaysRun=true)
 	public void initilize() throws IOException {
@@ -64,7 +40,6 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.naukri.com/nlogin/login?URL=https://www.naukri.com/mnjuser/homepage");
-		handleLocationPopup();
 	}
 
 	public List<HashMap<String, String>> read() throws IOException {
